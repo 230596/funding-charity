@@ -1,7 +1,15 @@
 <script>
+  import {charities} from '../stores/data.js';
   import {fade,slide,fly} from 'svelte/transition';
   import Modal from './Modal.svelte';
-  export let charities;
+  import Loader from '../components/Loader.svelte';
+  
+  let data;
+
+  charities.subscribe(function(value){
+    data = value;
+  })
+
 let isModalOpen = false;
 
 function calculateFounded(pledged,target){
@@ -44,7 +52,7 @@ function handleButton(){
       
       
       <div class="row">
-        {#each charities as charity }
+        {#each data as charity }
         <div class="col-lg-4 col-md-6" in:slide={{delay:1000}} out:fade={{delay:1000}}>
          <Modal>
             <!-- modal goes here -->
@@ -138,6 +146,8 @@ function handleButton(){
             </div><!-- .xs-item-content END -->
           </div><!-- .xs-popular-item END -->
         </div>
+        {:else}
+        <Loader/>
         {/each}
       </div>
       
