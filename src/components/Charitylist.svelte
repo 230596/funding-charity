@@ -7,12 +7,12 @@ let isModalOpen = false;
 function calculateFounded(pledged,target){
   return Math.round((1/(target/pledged))*100);
 }
-// function formatCurrency(nominal){
-// return nominal.toLocaleString('id-ID',{
-//   style:'currency',
-//   currency:'IDR',
-// })
-// }
+function formatCurrency(nominal){
+return nominal.toLocaleString('id-ID',{
+  style:'currency',
+  currency:'IDR',
+})
+}
 function calculateDaysRemaining(date_end){
   const delta=date_end - new Date();
   const oneDay=24*60*60*1000;
@@ -111,7 +111,7 @@ function handleButton(){
 
               <ul class="xs-list-with-content">
               <li class="pledged">
-                <!-- {formatCurrency(charity.pledged)} -->
+                {formatCurrency(charity.pledged)}
                 <span>Pledged</span></li>
                 <li><span class="number-percentage-count number-percentage" data-value="90"
                 data-animation-duration="3500">{calculateFounded(charity.pledged,charity.target)}</span>% <span>Funded</span></li>

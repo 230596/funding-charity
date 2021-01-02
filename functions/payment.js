@@ -1,7 +1,7 @@
 exports.handler = function(event, context, callback) {
     const Midtrans = require('midtrans-client');
 
-    const header = {
+    const headers = {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Methods': 'GET, POST , PUT, DELETE'
@@ -15,7 +15,7 @@ exports.handler = function(event, context, callback) {
 
     const { id, name, email, amount } = JSON.parse(event.body);
 
-    const names = name.split('');
+    const names = name.split(' ');
     let first_name, last_name;
 
     if (names && names.length > 1) {
@@ -27,8 +27,8 @@ exports.handler = function(event, context, callback) {
     }
 
     const parameters = {
-        transactions_details: {
-            order_id: `DELEHDAN-${id}-${+new Date()}`,
+        transaction_details: {
+            order_id: `DELEHDAN-${id}-${+ new Date()}`,
             gross_amount: parseInt(amount)
         },
         customer_details: {
@@ -40,10 +40,13 @@ exports.handler = function(event, context, callback) {
             secure: true
         }
     }
+    console.log(typeof parameters)
 
     snap.createTransaction(parameters)
         .then(function(transaction) {
             const { token, redirect_url } = transaction;
+            console.log(`Token: ${token}`);
+            console.log(`Redirect URL: ${redirect_url}`);
 
             callback(null, {
                 statusCode: 200,
@@ -58,7 +61,7 @@ exports.handler = function(event, context, callback) {
             callback(null, {
                 statusCode: 400,
                 headers,
-                body: JSON.stringfly({ error: err.message })
+                body: JSON.stringify({ error: err.message })
             })
         })
 }

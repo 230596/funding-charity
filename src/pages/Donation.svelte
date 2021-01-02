@@ -5,7 +5,10 @@
      import Loader from '../components/Loader.svelte';
      
      export let params;
-     let charity,amount=0,name,email,agree=false,contribute=0;
+     let charity,amount,
+     name,
+     email,
+     agree=false,contribute=0;
      async function getCharity(id){
          const res = await fetch(`https://charity-api-bwa.herokuapp.com/charities/${id}`);
          return res.json();
@@ -23,8 +26,21 @@
             },
             body:JSON.stringify(charity)
         });  
-        console.log(res)
-        router.redirect('/succes')
+        const resMid = await fetch(`/.netlify/functions/payment`,{
+          method: "POST",
+          headers:{
+            "content-type":"application/json"
+          },
+          body: JSON.stringify({
+            id: params.id,
+            amount: parseInt(amount),
+            name,
+            email,
+          })
+        });
+        const midtransData = await resMid.json();
+        console.log(midtransData)
+        window.location.href = midtransData.url;
         } catch (error) {
             console.log(error)
         } 

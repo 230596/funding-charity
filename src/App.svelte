@@ -8,7 +8,7 @@
 	import Succes from './pages/Succes.svelte'
 	import Failure from './pages/failure.svelte';
 	
-
+	
 	export let ready;
 	let page,params;
 
