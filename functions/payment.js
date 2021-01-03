@@ -28,7 +28,7 @@ exports.handler = function(event, context, callback) {
 
     const parameters = {
         transaction_details: {
-            order_id: `DELEHDAN-${id}-${+ new Date()}`,
+            order_id: `DELEHDANA-${id}-${+ new Date()}`,
             gross_amount: parseInt(amount)
         },
         customer_details: {

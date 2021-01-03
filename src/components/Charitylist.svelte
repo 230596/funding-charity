@@ -44,8 +44,7 @@ function handleButton(){
       <div class="xs-heading row xs-mb-60">
         <div class="col-md-9 col-xl-9">
           <h2 class="xs-title">Popular Causes</h2>
-          <span class="xs-separetor dashed"></span>
-          <p>FundPress has built a platform focused on aiding entrepreneurs, startups, and <br> companies
+          <p>DelehdanaPress has built a platform focused on aiding entrepreneurs, startups, and <br> companies
             raise capital from anyone.</p>
         </div><!-- .xs-heading-title END -->
       </div><!-- .row end -->

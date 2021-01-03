@@ -53,7 +53,7 @@
         <div class="col-md-4">
           <div class="xs-about-feature">
             <h3>Our Mission</h3>
-            <p class="lead">The CharityPress community was named a “Top 25 Best Global Philanthropist” by Barron’s. We beat Oprah. And, Mashable named CharityPress something like that.</p>
+            <p class="lead">The DelehdanaPress community was named a “Top 25 Best Global Philanthropist” by Barron’s. We beat Oprah. And, Mashable named DelehdanaPress something like that.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -78,7 +78,7 @@
   </section>  <!-- End video popup section section -->
   
     <!-- funfacts section -->
-    <div class="xs-funfact-section xs-content-section-padding waypoint-tigger parallax-window" style="background-image: url('assets/images/backgrounds/parallax_1.jpg')">
+    <div class="xs-funfact-section xs-content-section-padding waypoint-tigger parallax-window" style="background-image: url('/assets/images/slide2.png')">
     <div class="container">
       <div class="row col-lg-10 xs-heading mx-auto">
         <h2 class="xs-title color-white small">Our agency has been present for over 30 years. We make the best for all our children.</h2>
@@ -87,28 +87,28 @@
         <div class="col-lg-3 col-md-6">
           <div class="xs-single-funFact color-white">
             <i class="icon-donation_2"></i>
-            <span class="number-percentage-count number-percentage" data-value="10" data-animation-duration="3500">0</span><span>M</span>
+            <span class="number-percentage-count number-percentage"  data-value="10" data-animation-duration="3500">10</span><span>M</span>
             <small>Causes</small>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="xs-single-funFact color-white">
             <i class="icon-group"></i>
-            <span class="number-percentage-count number-percentage" data-value="25" data-animation-duration="3500">0</span><span>k</span>
+            <span class="number-percentage-count number-percentage" data-value="25" data-animation-duration="3500">25</span><span>k</span>
             <small>Valunteer</small>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="xs-single-funFact color-white">
             <i class="icon-children"></i>
-            <span class="number-percentage-count number-percentage" data-value="30" data-animation-duration="3500">0</span><span>k</span>
+            <span class="number-percentage-count number-percentage" data-value="30" data-animation-duration="3500">30</span><span>k</span>
             <small>Childrens</small>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="xs-single-funFact color-white">
             <i class="icon-planet-earth"></i>
-            <span class="number-percentage-count number-percentage" data-value="14" data-animation-duration="3500">0</span><span>k</span>
+            <span class="number-percentage-count number-percentage" data-value="14" data-animation-duration="3500">14</span><span>k</span>
             <small>Countrys</small>
           </div>
         </div>
@@ -123,7 +123,6 @@
       <div class="xs-heading row xs-mb-60">
         <div class="col-md-9 col-xl-9">
           <h2 class="xs-title">What We Do</h2>
-          <span class="xs-separetor dashed"></span>
           <p>It allows you to gather monthly subscriptions from fans to help fund your creative projects. They also encourage their users to offer rewards to fans as a way to repay them for their support.</p>
         </div><!-- .xs-heading-title END -->
       </div><!-- .row end -->
@@ -139,21 +138,21 @@
           <div class="xs-service-promo">
             <span class="icon-groceries color-red"></span>
             <h5>Healty Food <br>For Poor People</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
+            <p>759 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="xs-service-promo">
             <span class="icon-heartbeat color-purple"></span>
             <h5>Medical <br>Facilities for People</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
+            <p>845 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="xs-service-promo">
             <span class="icon-open-book color-green"></span>
             <h5>Pure Education <br>For Every Children</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
+            <p>456 million people drink dirty water. Learn how access to clean water can improve health, boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>
       </div><!-- .row end -->

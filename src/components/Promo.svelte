@@ -18,7 +18,7 @@
           <div class="xs-service-promo">
             <span class="icon-groceries"></span>
             <h5>Healty Food <br>For Poor People</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health,
+            <p>759 million people drink dirty water. Learn how access to clean water can improve health,
               boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>
@@ -26,7 +26,7 @@
           <div class="xs-service-promo">
             <span class="icon-heartbeat"></span>
             <h5>Medical <br>Facilities for People</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health,
+            <p>845 million people drink dirty water. Learn how access to clean water can improve health,
               boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>
@@ -34,7 +34,7 @@
           <div class="xs-service-promo">
             <span class="icon-open-book"></span>
             <h5>Pure Education <br>For Every Children</h5>
-            <p>663 million people drink dirty water. Learn how access to clean water can improve health,
+            <p>456 million people drink dirty water. Learn how access to clean water can improve health,
               boost local economies.</p>
           </div><!-- .xs-service-promo END -->
         </div>

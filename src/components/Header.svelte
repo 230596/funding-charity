@@ -5,7 +5,7 @@
         <div class="nav-menus-wrapper row">
           <div class="xs-logo-wraper col-lg-2 xs-padding-0">
             <a class="nav-brand" href="/">
-              <img src="/assets/images/DelehDanalogo.png" alt="">
+              <img src="/assets/images/deldan.png" alt="">
             </a>
           </div><!-- .xs-logo-wraper END -->
           <div class="col-lg-7">
